@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-background: #f9f9f9;
+  --color-on-background: #1a1c1c;
+  --color-on-tertiary-fixed: #1b1c1c;
+  --color-primary-container: #ffe600;
+  --color-on-primary-fixed: #201c00;
+  --color-primary-fixed: #fde400;
+  --color-secondary: #5e5e5e;
+  --color-primary: #6a5f00;
+  --color-on-primary: #ffffff;
+  --color-surface-container: #eeeeee;
+  --color-error: #ba1a1a;
+  --color-on-secondary-fixed: #1b1b1b;
+  --color-on-secondary: #ffffff;
+  --color-secondary-fixed-dim: #c6c6c6;
+  --color-outline-variant: #cdc7aa;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+  --spacing-margin-mobile: 16px;
+  --spacing-margin-desktop: 32px;
+  --spacing-max-width: 1280px;
+}
+
+@layer utilities {
+  .shadow-level-1 { box-shadow: 0px 2px 8px rgba(0,0,0,0.05); }
+  .shadow-level-2 { box-shadow: 0px 4px 16px rgba(0,0,0,0.10); }
+
+  /* Typography utilities perfectly mapped to the design system */
+  .font-display-lg, .text-display-lg { font-family: 'Inter', sans-serif; font-size: 48px; line-height: 56px; letter-spacing: -0.02em; font-weight: 700; }
+  .font-headline-lg, .text-headline-lg { font-family: 'Inter', sans-serif; font-size: 32px; line-height: 40px; letter-spacing: -0.01em; font-weight: 700; }
+  .font-headline-md, .text-headline-md { font-family: 'Inter', sans-serif; font-size: 24px; line-height: 32px; font-weight: 600; }
+  .font-headline-sm, .text-headline-sm { font-family: 'Inter', sans-serif; font-size: 20px; line-height: 28px; font-weight: 600; }
+  .font-body-lg, .text-body-lg { font-family: 'Inter', sans-serif; font-size: 18px; line-height: 28px; font-weight: 400; }
+  .font-body-md, .text-body-md { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 24px; font-weight: 400; }
+  .font-body-sm, .text-body-sm { font-family: 'Inter', sans-serif; font-size: 14px; line-height: 20px; font-weight: 400; }
+  .font-label-lg, .text-label-lg { font-family: 'Inter', sans-serif; font-size: 14px; line-height: 20px; font-weight: 600; }
+  .font-label-md, .text-label-md { font-family: 'Inter', sans-serif; font-size: 12px; line-height: 16px; font-weight: 600; }
+  .font-label-sm, .text-label-sm { font-family: 'Inter', sans-serif; font-size: 11px; line-height: 14px; font-weight: 500; }
+  
+  .product-card:hover { transform: translateY(-2px); box-shadow: 0px 4px 16px rgba(0,0,0,0.10); }
+}
